@@ -28,7 +28,7 @@ echo "################################################################"
 sudo pacman --noconfirm --needed -Sy dialog git || error "Error syncing the repos."
 
 welcome() { \
-    dialog --colors --title "\Z7\ZbInstalling DTOS!" --msgbox "\Z4This is a script is what I call HMOS. Its basically just installs my configs into your system.\\n\\n-DT (Haider Mirza)" 16 60
+    dialog --colors --title "\Z7\ZbInstalling HMOS!" --msgbox "\Z4This is a script is what I call HMOS. Its basically just installs my configs into your system.\\n\\n-DT (Haider Mirza)" 16 60
 
     dialog --colors --title "\Z7\ZbStay near your computer!" --yes-label "Continue" --no-label "Exit" --yesno "\Z4This script is not allowed to be run as root, but you will be asked to enter your sudo password at various points during this installation. This is to give PACMAN the necessary permissions to install the software.  So stay near the computer." 8 60
 }
