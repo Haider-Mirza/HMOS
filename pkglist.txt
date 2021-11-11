@@ -1,0 +1,12 @@
+blender
+mpv
+element-desktop
+kdenlive
+youtube-dl
+libnotify
+dunst
+qutebrowser
+inkscape
+pcmanfm
+minecraft-launcher
+

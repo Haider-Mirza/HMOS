@@ -1,0 +1,72 @@
+#+TITLE: How To Install
+#+AUTHOR: Haider Mirza
+* Table Of Contents :toc:
+- [[#note][Note]]
+- [[#how-to-install-archlinux][How to install ArchLinux]]
+
+* Note
+This installation is only for legacy bios systems.
+
+* How to install ArchLinux
+This is How to install ArchLinux (not my script)
+
+These commands are in order:
+
+1. ping google.com
+   (Test internet)
+
+2. timedatectl set-ntp true
+
+3. cfdisk
+   (partition the disk)
+
+4. mkfs.ext4 /dev/root_partition
+
+5. mkswap /dev/swap_partition
+
+6. mount /dev/root_partition /mnt
+
+7. swapon /dev/swap_partition
+
+8. pacstrap /mnt base linux linux-firmware vim intel-ucode networkmanager grub sudo
+(Or you can use a different ucode for example amd-ucode.)
+
+1. genfstab -U /mnt >> /mnt/etc/fstab
+
+2. arch-chroot /mnt
+
+3. ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+
+4. hwclock --systohc
+
+5. vim /etc/locale.conf
+
+6.   Edit /etc/locale.gen and uncomment en_US.UTF-8 UTF-8 and other needed locales. Generate the locales by running:
+   "locale-gen"
+
+7. LANG=GB_US.UTF-8
+   LC_CTYPE=GB_US.UTF-8
+(Enter this into the file)
+
+16. Exit vim
+
+17. systemctl enable NetworkManager
+
+18. useradd -m -G wheel -s /bin/bash haider
+(haider is the username I chose u change change it to your liking. Anywhere there is haider in a command you change to your username.)
+
+19. visudo
+
+20. uncomment line "%wheel ALL=(ALL) All"
+
+21. Exit vim
+
+22. passwd haider
+
+23. grub-install /dev/sda
+
+24. grub-mkconfig -o //boot/grub/grub.cfg/
+
+25. exit
+
+26. reboot
