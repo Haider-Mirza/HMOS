@@ -20,4 +20,4 @@ Most of my projects are licensed under GPL V3 license.
 ArchInstall is a pre-installation script for ArchLinux that I had composed in Bash. This Script installs all of my config to your system. The proccess Is fully Automatic and may require your sudo password.
 
 ** NOTE
-This script is not allowed to be run as root. You will be asked to enter your sudo password at various points during this installation. This is to give PACMAN the necessary permissions to install the software. So stay near your computer.
+This script is not allowed to be run as root. You will be asked to enter your Sudo password at various points during this installation. This is to give PACMAN the necessary permissions to install the software. So stay near your computer.
