@@ -52,8 +52,6 @@ sudo mkdir /usr/HMconf/
 cd /usr/HMconf/
 sudo git clone --depth 1 https://github.com/Haider-Mirza/.dotfiles /usr/HMconf/.dotfiles
 sudo git clone --depth 1 https://github.com/Haider-Mirza/HMScripts /usr/HMconf/HMScripts
-sudo git clone --depth 1 https://github.com/Haider-Mirza/HM-Emacs /usr/HMconf/HM-Emacs
-
 
 echo "##########################################"
 echo "## Copying My configs to Home directory ##"
@@ -63,5 +61,4 @@ echo "##########################################"
 cd /usr/HMconf/HMScripts/
 cp -rf Scripts/* $HOME/.local/bin
 
-# Copying HM-Emacs to ~/.emacs.d/
-cd /usr/HMconf/HMScripts/
+# Copying my dotfiles to the home directory
