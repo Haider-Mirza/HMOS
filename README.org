@@ -15,7 +15,9 @@
 My Name is Haider Mirza and I am a 3D artist and Programmer.
 All my projects are hosted on github and are free and open-source.
 Most of my projects are licensed under GPL V3 license.
-
+* NOTE:
+  I have switched to GNU Guix so this script is depricated.
+  
 * What is ArchInstall
 ArchInstall is a pre-installation script for ArchLinux that I had composed in Bash. This Script installs all of my config to your system. The proccess Is fully Automatic and may require your sudo password.
 
