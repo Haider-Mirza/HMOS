@@ -1,4 +1,4 @@
-#+TITLE: AboutScripts
+#+TITLE: AboutScripts - =DEPRICATED=
 #+AUTHOR: Haider Mirza
 
 * Table of contents: :toc:
